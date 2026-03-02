@@ -10,6 +10,7 @@ export default defineConfig({
         terms: resolve(__dirname, 'terms.html'),
         article1: resolve(__dirname, 'article-working-capital-problem.html'),
         article2: resolve(__dirname, 'article-marketplace-distribution.html'),
+        article3: resolve(__dirname, 'article-funding-options.html'),
       },
     },
   },
