@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hidden Cost of Marketplace Distribution for AI Startups — Floatcap</title>
+    <meta name="description"
+        content="Selling through Microsoft, AWS, or Salesforce marketplaces is fast, but the payout delays create a structural cash flow problem for AI companies.">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,300;1,8..60,400;1,8..60,500&family=Outfit:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <script type="module" src="/src/main.js"></script>
+</head>
+
+<body>
+
+    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+        <a href="/" class="nav-brand" aria-label="Floatcap home">
+            <div class="nav-mark" aria-hidden="true">Fc</div> Floatcap
+        </a>
+        <div class="nav-menu">
+            <a href="/#problem">Problem</a>
+            <a href="/#how">Approach</a>
+            <a href="/#compare">Compare</a>
+            <a href="/#articles">Articles</a>
+            <a href="/#faq">FAQ</a>
+            <a href="/#waitlist" class="btn-nav">Get Early Access</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"
+            aria-controls="mobileOverlay">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <div class="mobile-overlay" id="mobileOverlay" role="dialog" aria-label="Mobile navigation">
+        <a href="/#problem">Problem</a>
+        <a href="/#how">Approach</a>
+        <a href="/#compare">Compare</a>
+        <a href="/#articles">Articles</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/#waitlist" class="btn-nav">Get Early Access</a>
+    </div>
+
+    <main class="article-page">
+        <article class="article-container">
+            <header class="article-header">
+                <div class="article-meta-info">Insights &middot; March 2026</div>
+                <h1>The Hidden Cost of Marketplace Distribution for AI Startups</h1>
+                <p class="article-lead">Selling through Microsoft, AWS, or Salesforce marketplaces is one of the fastest
+                    paths to enterprise revenue for an AI company. What nobody talks about is what happens to your cash
+                    flow once the deal closes.</p>
+            </header>
+
+            <div class="article-content-body">
+                <p>Selling through Microsoft, AWS, or Salesforce marketplaces is one of the fastest paths to enterprise
+                    revenue for an AI company. The buyer already has budget allocated. Procurement is simplified. Trust
+                    is inherited from the platform. For many startups, marketplace distribution is the difference
+                    between a six-month sales cycle and a six-week one.</p>
+
+                <p>What nobody talks about is what happens to your cash flow once the deal closes.</p>
+
+                <h2>How marketplace payouts actually work</h2>
+                <p>Cloud marketplaces are not payment processors. They are enterprise procurement platforms that happen
+                    to collect money on your behalf. The distinction matters because the payout mechanics are built for
+                    the convenience of the buyer and the platform, not the seller.</p>
+
+                <p>Here is how the three major marketplaces handle your money.</p>
+
+                <p><strong>Microsoft Marketplace (via Partner Center)</strong></p>
+                <p>Microsoft collects payment from the enterprise buyer. Your earnings are calculated at the end of each
+                    calendar month. Payouts are initiated around the 15th of the following month, but only if your
+                    account has met the minimum payout threshold. From there, the transfer to your bank account takes 3
+                    to 10 business days depending on your payment method and region.</p>
+
+                <p>In practice, this means revenue earned in the first week of March might not hit your bank account
+                    until late April. Revenue earned in the last week of March might not arrive until early May. The
+                    effective delay from the point of sale to cash in your account ranges from 45 to 75 days.</p>
+
+                <p><strong>AWS Marketplace</strong></p>
+                <p>AWS operates on a similar monthly cycle but adds a layer of complexity through its disbursement
+                    process. Seller revenue is calculated after the end of the billing period, and disbursements are
+                    processed after a holding period that typically runs 30 to 60 days from the billing date.</p>
+
+                <p>For usage-based pricing (which is the dominant model for AI products), each month's usage is billed,
+                    collected, and disbursed on its own cycle. A customer who consumed $50,000 in inference-powered
+                    features in February might generate a disbursement that arrives in your account in April or May.</p>
+
+                <p><strong>Salesforce AppExchange</strong></p>
+                <p>Salesforce takes a revenue share and operates on its own billing and remittance cycle. For managed
+                    package applications, Salesforce handles billing through its platform and remits your share after
+                    the customer has paid and the applicable hold period has elapsed.</p>
+
+                <p>The Salesforce cycle is generally slower than Microsoft or AWS. Some ISV partners report payout
+                    timelines of 60 to 90 days from the point of customer usage.</p>
+
+                <figure class="article-image">
+                    <img src="/marketplace-comparison-chart.png"
+                        alt="Comparison chart of Microsoft, AWS, and Salesforce marketplace fee structures and payout cycles.">
+                    <figcaption>Marketplace payout dynamics comparison.</figcaption>
+                </figure>
+
+                <h2>The compounding effect on AI companies</h2>
+                <p>For a traditional SaaS company, marketplace payout delays are an inconvenience. Your hosting costs
+                    are relatively fixed and modest. A two-month delay in receiving $100,000 is annoying but survivable
+                    if your marginal cost of serving that customer is $10,000.</p>
+
+                <p>For an AI company, the same delay is structurally dangerous. Here is a worked example.</p>
+
+                <p>Suppose you run an AI document processing tool sold through the Microsoft Marketplace. You price at
+                    $0.05 per page processed. In March, a new enterprise customer onboards and processes 2 million
+                    pages. That is $100,000 in revenue.</p>
+
+                <p>To serve those 2 million pages, your application made roughly 500,000 API calls to an LLM provider.
+                    Your inference bill for March is $40,000. Your LLM provider invoices you at the end of March,
+                    payment due within 30 days.</p>
+
+                <p>Your unit economics ($100k revenue vs $55k total costs) are healthy. But Microsoft will not pay you
+                    until early May. Your LLM provider wants their $40k by the end of April. You have $100k in
+                    receivables and $55k in immediate obligations, and the cash is sitting in Microsoft’s treasury.</p>
+
+                <p>Multiply this by five customers, and your monthly obligations hit $275,000 — all due 30 to 60 days
+                    before the corresponding revenue arrives.</p>
+
+                <figure class="article-image">
+                    <img src="/cash-flow-waterfall-chart.png"
+                        alt="Cash flow waterfall chart illustrating the growing working capital gap as revenue and costs scale.">
+                    <figcaption>The widening working capital gap during growth phases.</figcaption>
+                </figure>
+
+                <h2>The metrics that matter (and the ones that don't)</h2>
+                <p>Traditional lenders evaluate businesses on gross margin, EBITDA, and debt-to-equity ratios. For AI
+                    companies selling through marketplaces, these metrics either mislead or miss the point entirely.</p>
+
+                <p><strong>Gross margin</strong> is misleading because inference costs are variable, usage-dependent,
+                    and improving over time. Rejecting a loan application based on a margin snapshot is like rejecting a
+                    manufacturing loan because raw material prices were temporarily elevated.</p>
+
+                <p><strong>EBITDA</strong> is misleading because it does not capture the timing of cash flows. A company
+                    can be EBITDA-positive on a quarterly basis while being cash-flow-negative on a monthly basis purely
+                    because of payout timing.</p>
+
+                <p>The metrics that actually matter for underwriting an AI company include <strong>Revenue per dollar of
+                        inference</strong>, <strong>Payout cycle duration</strong>, and <strong>Inference cost
+                        trajectory</strong>.</p>
+
+                <h2>What founders can do today</h2>
+                <p>If you are an AI founder running into this cash flow timing problem, there are a few practical steps
+                    worth considering while the lending market catches up:</p>
+                <ul>
+                    <li><strong>Negotiate compute terms.</strong> Committed-use discounts often come with more
+                        favourable billing terms.</li>
+                    <li><strong>Structure marketplace contracts carefully.</strong> Push for annual upfront billing
+                        where possible.</li>
+                    <li><strong>Track your real working capital gap.</strong> Build a model that accounts for your exact
+                        payout timing.</li>
+                    <li><strong>Separate your unit economics from blended financials.</strong> Show your profitability
+                        at the inference level.</li>
+                </ul>
+
+                <div class="article-cta">
+                    <p>This article was written by the Floatcap team. We are building working capital infrastructure for
+                        AI companies selling through marketplaces and enterprise channels. <a href="/#waitlist">Join the
+                            waitlist.</a></p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer-inner">
+            <div class="footer-bottom">
+                <span class="footer-copy">© 2026 Floatcap. All rights reserved.</span>
+                <div class="footer-socials">
+                    <a href="/">Home</a>
+                    <a href="/privacy.html">Privacy Policy</a>
+                    <a href="/terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M8 13V3M4 7l4-4 4 4" />
+        </svg>
+    </button>
+
+</body>
+
+</html>
