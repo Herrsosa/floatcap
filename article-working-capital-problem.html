@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why AI Companies Have a Working Capital Problem Banks Can't Solve — Floatcap</title>
+    <meta name="description"
+        content="Most AI companies will hit a cash crisis between $500K and $5M in annual revenue. This is a structural problem, not a cyclical one.">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,300;1,8..60,400;1,8..60,500&family=Outfit:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <script type="module" src="/src/main.js"></script>
+</head>
+
+<body>
+
+    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+        <a href="/" class="nav-brand" aria-label="Floatcap home">
+            <div class="nav-mark" aria-hidden="true">Fc</div> Floatcap
+        </a>
+        <div class="nav-menu">
+            <a href="/#problem">Problem</a>
+            <a href="/#how">Approach</a>
+            <a href="/#compare">Compare</a>
+            <a href="/#articles">Articles</a>
+            <a href="/#faq">FAQ</a>
+            <a href="/#waitlist" class="btn-nav">Get Early Access</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"
+            aria-controls="mobileOverlay">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+    <div class="mobile-overlay" id="mobileOverlay" role="dialog" aria-label="Mobile navigation">
+        <a href="/#problem">Problem</a>
+        <a href="/#how">Approach</a>
+        <a href="/#compare">Compare</a>
+        <a href="/#articles">Articles</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/#waitlist" class="btn-nav">Get Early Access</a>
+    </div>
+
+    <main class="article-page">
+        <article class="article-container">
+            <header class="article-header">
+                <div class="article-meta-info">Insights &middot; March 2026</div>
+                <h1>Why AI Companies Have a Working Capital Problem Banks Can't Solve</h1>
+                <p class="article-lead">Most AI companies will hit a cash crisis between $500K and $5M in annual
+                    revenue. Not because the business is failing. Because the business is working.</p>
+            </header>
+
+            <div class="article-content-body">
+                <p>This is a structural problem, not a cyclical one. And almost nobody in lending understands it yet.
+                </p>
+
+                <h2>The timing mismatch</h2>
+                <p>Here is the basic arithmetic of running an AI company that sells through enterprise channels or cloud
+                    marketplaces.</p>
+                <p>Your inference costs are due now. Every API call to OpenAI, Anthropic, or AWS Bedrock generates a
+                    bill. Most providers invoice monthly. Some require pre-paid compute commitments. The meter is always
+                    running.</p>
+                <p>Your revenue arrives later. Enterprise contracts pay net 30 to net 60. If you sell through the
+                    Microsoft Marketplace, AWS Marketplace, or Salesforce AppExchange, payout cycles run 30 to 90 days
+                    after the end of the billing period. Microsoft Partner Center, for instance, processes payouts
+                    around the 15th of the month for earnings that closed in the prior month. For a sale made on March
+                    1st, you might not see the cash until mid-May.</p>
+                <p>The gap between these two dates is your working capital problem. And unlike most businesses, this gap
+                    grows proportionally with revenue. The more customers you land, the worse it gets.</p>
+
+                <figure class="article-image">
+                    <img src="/working-capital-gap-diagram.png"
+                        alt="Timeline diagram showing the timing mismatch between compute costs and revenue collection, creating a working capital gap.">
+                    <figcaption>The structural working capital gap for AI companies.</figcaption>
+                </figure>
+
+                <h2>Why banks say no</h2>
+                <p>Walk into any high street bank or commercial lender with an AI company doing $2M in revenue and ask
+                    for a working capital facility. Here is what happens.</p>
+                <p>The credit analyst pulls your financials and sees gross margins between 25% and 60%. In traditional
+                    SaaS, gross margins run 80% to 90%. The analyst's model was built for SaaS. Your margins look
+                    distressed. Application denied.</p>
+                <p>What the analyst misses is that your cost of goods sold is fundamentally different from a traditional
+                    software company. In SaaS, COGS is mostly hosting and support. Small, predictable, relatively fixed.
+                    In AI, COGS is inference: the cost of running models against customer queries. It scales directly
+                    with usage. It is, in a real sense, more like manufacturing inventory than software overhead.</p>
+                <p>A clothing retailer with 50% gross margins would have no trouble getting a working capital line.
+                    Banks understand inventory. They understand that you buy materials, produce goods, sell them, and
+                    collect payment. The margin compression is expected.</p>
+                <p>But inference costs don't look like inventory on a balance sheet. There is no warehouse. No
+                    receivables ledger tied to physical goods. The bank's underwriting model simply has no category for
+                    "we spend $80K a month on API calls to generate revenue that arrives 60 days later."</p>
+                <p>This is not a temporary market gap. Basel III and its successors have systematically pushed banks
+                    away from small business lending for over a decade. In the US, business loans under $1 million have
+                    declined 5% since 2010 in real terms. Loans above $1 million are up 68% over the same period. The
+                    economics of underwriting a $500K credit facility for an AI startup simply don't work for a
+                    regulated bank.</p>
+
+                <h2>Why revenue-based finance doesn't fit either</h2>
+                <p>Revenue-based financing (RBF) was built for subscription SaaS. The model assumes predictable monthly
+                    recurring revenue, stable margins, and low churn. The lender takes a fixed percentage of monthly
+                    revenue until a predetermined multiple is repaid.</p>
+                <p>AI companies break this model in three ways.</p>
+                <p>First, revenue is often usage-based, not subscription-based. A document processing company might bill
+                    $0.03 per page extracted. An AI coding assistant might charge per seat but see wildly different
+                    compute loads per user. Monthly revenue can swing 30% or more based on customer activity. RBF
+                    lenders need to model repayment schedules, and volatile revenue makes that difficult.</p>
+                <p>Second, the margin structure creates concentration risk the lender didn't price for. If your largest
+                    customer accounts for 40% of revenue but generates compute costs that eat 70% of that revenue
+                    (because they run complex, token-heavy queries), the lender's percentage-of-revenue repayment is
+                    capturing dollars that are already spoken for. The borrower's actual free cash flow is much lower
+                    than top-line revenue suggests.</p>
+                <p>Third, RBF typically requires a fixed repayment period. But AI companies in growth mode are
+                    increasing compute spend faster than revenue in order to onboard new enterprise customers, build new
+                    model capabilities, or pre-purchase compute at volume discounts. A fixed repayment schedule during a
+                    scaling phase creates exactly the kind of cash squeeze the financing was supposed to prevent.</p>
+
+                <h2>The Stripe paradox</h2>
+                <p>Stripe's 2025 annual letter contains a remarkable data point: businesses that received Stripe Capital
+                    offers grew 27 percentage points faster than those that didn't. The Collison brothers wrote that
+                    "access to capital will become a more important factor in economic outcomes over the coming years,
+                    as advances in artificial intelligence increase the returns on investment."</p>
+                <p>They are right. And the irony is that the companies best positioned to benefit from working capital,
+                    AI companies with strong unit economics and growing enterprise revenue, are precisely the ones that
+                    existing lenders struggle to serve.</p>
+                <p>Stripe Capital works because Stripe has real-time visibility into the borrower's payment flows.
+                    Repayment is automatic: a percentage of every transaction is withheld. The borrower never misses a
+                    payment because the payment infrastructure is the lending infrastructure.</p>
+                <p>But Stripe Capital only serves businesses that process payments through Stripe. An AI company selling
+                    through Microsoft Marketplace, collecting revenue through AWS, or billing enterprise customers on
+                    net-60 terms sits on entirely different rails. Stripe doesn't see their revenue. The same structural
+                    advantage that makes Stripe Capital work, payment-level data and automatic sweeps, is absent.</p>
+                <p>This gap is where the opportunity sits.</p>
+
+                <h2>What underwriting should actually look like</h2>
+                <p>If you were designing a working capital product specifically for AI companies, you would start from
+                    different first principles than any existing lender.</p>
+                <p>You would connect directly to inference cost APIs. Not bank statements. Not accounting exports. The
+                    actual billing data from OpenAI, Anthropic, Google, or AWS Bedrock. This gives you real-time
+                    visibility into the borrower's primary cost driver.</p>
+                <p>You would connect to marketplace payout APIs. Microsoft Partner Center, AWS Marketplace Management
+                    Portal, Salesforce AppExchange. This gives you the revenue side, with actual payout timing, not
+                    reported revenue.</p>
+                <p>From these two data sources, you can calculate the metric that actually matters: revenue generated
+                    per dollar of inference cost. This ratio tells you whether the business has healthy unit economics
+                    after its primary variable cost. A company generating $2.50 in marketplace revenue for every $1.00
+                    spent on inference has a fundamentally sound business, regardless of what its blended gross margin
+                    looks like on a P&L.</p>
+                <p>Repayment would be structured as a percentage sweep of incoming marketplace payouts. Not a fixed
+                    monthly amount. Not a percentage of top-line revenue. A sweep of actual cash arriving in the
+                    account. This aligns the lender's cash flows with the borrower's and eliminates the timing mismatch
+                    that created the problem in the first place.</p>
+                <p>Credit limits would adjust in real time as the underlying data changes. Revenue growing and inference
+                    efficiency improving? The limit increases automatically. Customer concentration spiking or margins
+                    deteriorating? The limit contracts. No annual reviews. No document requests.</p>
+                <p>This is not a theoretical exercise. Every component described above is technically feasible today.
+                    The APIs exist. The payout data is accessible. The sweep mechanism is proven (Stripe Capital,
+                    Shopify Capital, and Amazon Lending all use variants of it). What doesn't exist yet is a lender that
+                    combines these components specifically for AI company economics.</p>
+
+                <h2>The scale of the opportunity</h2>
+                <p>The population of AI companies hitting this working capital wall is growing faster than anyone
+                    expected. Stripe reported that companies in their 2025 cohort grew 50% faster than those in 2024.
+                    The number of companies reaching $10M in annual recurring revenue within three months of launch
+                    doubled year on year. GitHub pushes surged 41%. iOS app releases jumped 60%.</p>
+                <p>Many of these companies will sell through cloud marketplaces because that is where enterprise buyers
+                    increasingly discover and procure software. Microsoft alone lists over 4,000 AI applications on its
+                    marketplace. AWS and Salesforce are growing their AI app directories at similar rates.</p>
+                <p>Every one of these companies faces the same structural timing mismatch. The compute bill is due
+                    before the payout arrives. The margins look wrong to traditional lenders. And the existing working
+                    capital products were designed for a different era of software economics.</p>
+                <p>Someone will build the right solution. The question is when.</p>
+
+                <div class="article-cta">
+                    <p>This article was written by the Floatcap team. If you are an AI company experiencing the working
+                        capital dynamics described above, we would like to hear from you. <a href="/#waitlist">Join the
+                            waitlist.</a></p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer-inner">
+            <div class="footer-bottom">
+                <span class="footer-copy">© 2026 Floatcap. All rights reserved.</span>
+                <div class="footer-socials">
+                    <a href="/">Home</a>
+                    <a href="/privacy.html">Privacy Policy</a>
+                    <a href="/terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M8 13V3M4 7l4-4 4 4" />
+        </svg>
+    </button>
+
+</body>
+
+</html>

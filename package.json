@@ -1,0 +1,14 @@
+{
+  "name": "floatcap",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Floatcap — Working capital for AI companies",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.2.0"
+  }
+}
