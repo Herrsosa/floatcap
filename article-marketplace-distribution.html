@@ -50,16 +50,16 @@
             <header class="article-header">
                 <div class="article-meta-info">Insights &middot; March 2026</div>
                 <h1>The Hidden Cost of Marketplace Distribution for AI Startups</h1>
-                <p class="article-lead">Selling through Microsoft, AWS, or Salesforce marketplaces is one of the fastest
-                    paths to enterprise revenue for an AI company. What nobody talks about is what happens to your cash
-                    flow once the deal closes.</p>
+                <p class="article-lead">Selling through Microsoft or AWS marketplaces is one of the fastest paths to
+                    enterprise revenue for an AI company. What nobody talks about is what happens to your cash flow once
+                    the deal closes.</p>
             </header>
 
             <div class="article-content-body">
-                <p>Selling through Microsoft, AWS, or Salesforce marketplaces is one of the fastest paths to enterprise
-                    revenue for an AI company. The buyer already has budget allocated. Procurement is simplified. Trust
-                    is inherited from the platform. For many startups, marketplace distribution is the difference
-                    between a six-month sales cycle and a six-week one.</p>
+                <p>Selling through Microsoft or AWS marketplaces is one of the fastest paths to enterprise revenue for
+                    an AI company. The buyer already has budget allocated. Procurement is simplified. Trust is inherited
+                    from the platform. For many startups, marketplace distribution is the difference between a six-month
+                    sales cycle and a six-week one.</p>
 
                 <p>What nobody talks about is what happens to your cash flow once the deal closes.</p>
 
@@ -68,34 +68,67 @@
                     to collect money on your behalf. The distinction matters because the payout mechanics are built for
                     the convenience of the buyer and the platform, not the seller.</p>
 
-                <p>Here is how the three major marketplaces handle your money.</p>
+                <p>Here is how the two major enterprise cloud marketplaces handle your money, and why one common
+                    alternative settles much faster than most founders expect.</p>
 
                 <p><strong>Microsoft Marketplace (via Partner Center)</strong></p>
-                <p>Microsoft collects payment from the enterprise buyer. Your earnings are calculated at the end of each
-                    calendar month. Payouts are initiated around the 15th of the following month, but only if your
-                    account has met the minimum payout threshold. From there, the transfer to your bank account takes 3
-                    to 10 business days depending on your payment method and region.</p>
+                <p>Microsoft operates an agency model: it bills the customer on your behalf, collects, and remits your
+                    share. Your earnings are calculated at the end of each calendar month. Payouts are initiated around
+                    the 15th of the following month, but only if your account has met the minimum payout threshold of
+                    $50. From there, the transfer to your bank account takes 3 to 10 business days depending on your
+                    payment method and region.</p>
+
+                <p>But the timing depends heavily on how the customer pays. For credit card transactions, Microsoft adds
+                    a 30-day escrow period after receiving payment to manage chargeback and fraud risk. For Enterprise
+                    Agreement transactions (the dominant payment method for large buyers), payout timing follows the
+                    buyer's invoice terms. If the buyer is on Net 45 or Net 60 with Microsoft, your payout is delayed
+                    accordingly. Microsoft's own documentation confirms that non-standard invoice terms directly impact
+                    payout timing.</p>
 
                 <p>In practice, this means revenue earned in the first week of March might not hit your bank account
-                    until late April. Revenue earned in the last week of March might not arrive until early May. The
-                    effective delay from the point of sale to cash in your account ranges from 45 to 75 days.</p>
+                    until late April for credit card deals, or late May for EA transactions with extended terms. The
+                    effective delay from the point of sale to cash in your account ranges from 45 to 75 days, and can
+                    exceed that for buyers on longer terms.</p>
+
+                <p>Microsoft withholds a marketplace fee of 3% for most transactable offers, which is low relative to
+                    other platforms. But the timing structure, not the fee, is what creates the working capital problem.
+                </p>
 
                 <p><strong>AWS Marketplace</strong></p>
-                <p>AWS operates on a similar monthly cycle but adds a layer of complexity through its disbursement
-                    process. Seller revenue is calculated after the end of the billing period, and disbursements are
-                    processed after a holding period that typically runs 30 to 60 days from the billing date.</p>
+                <p>AWS introduces a fundamentally different timing model: disbursements happen only after AWS has
+                    collected from the buyer. This is not a holding period or an escrow. It is a collection dependency.
+                    Until the enterprise customer pays their AWS invoice, you receive nothing.</p>
 
-                <p>For usage-based pricing (which is the dominant model for AI products), each month's usage is billed,
+                <p>AWS allows sellers to choose daily or monthly disbursement cadences, and disbursements are typically
+                    initiated between the 7th and 10th of each month. But the cadence is irrelevant if the buyer has not
+                    yet paid. AWS's own "Vendor Finance Success" guide illustrates the real-world impact with specific
+                    scenarios: a Net 30 deal where the buyer pays early can yield cash in roughly 38 to 41 days. A Net
+                    30 deal where the buyer pays on the last due date stretches to 69 to 72 days. A Net 60 deal with
+                    payment on the due date reaches 97 to 100 days.</p>
+
+                <p>For usage-based pricing (the dominant model for AI products), each month's usage is billed,
                     collected, and disbursed on its own cycle. A customer who consumed $50,000 in inference-powered
-                    features in February might generate a disbursement that arrives in your account in April or May.</p>
+                    features in February might generate a disbursement that does not arrive until May if the buyer is on
+                    Net 60 terms.</p>
 
-                <p><strong>Salesforce AppExchange</strong></p>
-                <p>Salesforce takes a revenue share and operates on its own billing and remittance cycle. For managed
-                    package applications, Salesforce handles billing through its platform and remits your share after
-                    the customer has paid and the applicable hold period has elapsed.</p>
+                <p>AWS listing fees vary significantly: 3% for SaaS public offers, but up to 20% for "server" products
+                    (AMIs, containers, and machine learning deployments). Private offers follow a tiered structure: 3%
+                    below $1M in total contract value, dropping to 2% between $1M and $10M, and 1.5% above $10M. The fee
+                    structure is more complex than Microsoft's, and for smaller AI companies selling server-based or ML
+                    products, the 20% take rate creates an additional margin headwind on top of the timing gap.</p>
 
-                <p>The Salesforce cycle is generally slower than Microsoft or AWS. Some ISV partners report payout
-                    timelines of 60 to 90 days from the point of customer usage.</p>
+                <p><strong>Salesforce AppExchange: the counter-example</strong></p>
+                <p>Salesforce takes a different approach entirely. AppExchange Checkout is powered by Stripe, and funds
+                    settle on Stripe's payout schedule: typically 7 to 14 days for initial payouts, faster once
+                    established. The revenue share is 15% plus $0.30 per credit card transaction.</p>
+
+                <p>This matters because it demonstrates what is possible when the payment infrastructure is designed for
+                    speed. Salesforce AppExchange ISVs do not face the same structural working capital gap that
+                    Microsoft and AWS ISVs do. The settlement is fast enough that, for most AI companies, the timing
+                    mismatch between compute costs and revenue collection is manageable without financing.</p>
+
+                <p>The irony is that the two marketplaces with the longest payout delays (Microsoft and AWS) are also
+                    the two where enterprise AI companies concentrate most of their distribution.</p>
 
                 <figure class="article-image">
                     <img src="/marketplace-comparison-chart.png"
@@ -115,15 +148,29 @@
                     pages. That is $100,000 in revenue.</p>
 
                 <p>To serve those 2 million pages, your application made roughly 500,000 API calls to an LLM provider.
-                    Your inference bill for March is $40,000. Your LLM provider invoices you at the end of March,
-                    payment due within 30 days.</p>
+                    At an average cost of $0.08 per call (blending input and output tokens across varying document
+                    complexity), your inference bill for March is $40,000. Your LLM provider invoices you at the end of
+                    March, payment due within 30 days.</p>
 
-                <p>Your unit economics ($100k revenue vs $55k total costs) are healthy. But Microsoft will not pay you
-                    until early May. Your LLM provider wants their $40k by the end of April. You have $100k in
-                    receivables and $55k in immediate obligations, and the cash is sitting in Microsoft’s treasury.</p>
+                <p>You also have $15,000 in other costs: cloud hosting, vector database, monitoring, and the engineer
+                    who handles customer onboarding.</p>
 
-                <p>Multiply this by five customers, and your monthly obligations hit $275,000 — all due 30 to 60 days
-                    before the corresponding revenue arrives.</p>
+                <p>So in March you spent $55,000 to serve a customer who generated $100,000 in revenue. Healthy
+                    economics. But if the customer purchased via Microsoft Marketplace on a credit card, Microsoft holds
+                    the funds for a 30-day escrow period before including them in the next monthly payout cycle. If the
+                    customer is an Enterprise Agreement buyer on Net 45 terms, the delay is even longer. Either way, you
+                    are unlikely to see the cash before mid-May at the earliest.</p>
+
+                <p>Your LLM provider wants their $40,000 by end of April. Your cloud hosting bill is due. Your team
+                    expects their salaries. You have $100,000 in receivables and $55,000 in immediate obligations, and
+                    the cash to cover those obligations is sitting in Microsoft's treasury.</p>
+
+                <p>Now multiply this by five enterprise customers onboarding in the same quarter. Your receivables
+                    balloon to $500,000. Your monthly compute and operating costs hit $275,000. And every dollar of that
+                    cost is due 30 to 60 days before the corresponding revenue arrives.</p>
+
+                <p>This is not a profitability problem. Your unit economics are strong. It is a pure timing problem. And
+                    it gets worse, not better, as you grow.</p>
 
                 <figure class="article-image">
                     <img src="/cash-flow-waterfall-chart.png"
@@ -136,35 +183,75 @@
                     companies selling through marketplaces, these metrics either mislead or miss the point entirely.</p>
 
                 <p><strong>Gross margin</strong> is misleading because inference costs are variable, usage-dependent,
-                    and improving over time. Rejecting a loan application based on a margin snapshot is like rejecting a
-                    manufacturing loan because raw material prices were temporarily elevated.</p>
+                    and improving over time. A company with 45% gross margin today might have 60% gross margin in six
+                    months if their RAG pipeline improves, their prompt engineering gets tighter, or their LLM provider
+                    drops prices (which, historically, they do every few months). Rejecting a loan application based on
+                    a margin snapshot is like rejecting a manufacturing loan because raw material prices were
+                    temporarily elevated.</p>
 
                 <p><strong>EBITDA</strong> is misleading because it does not capture the timing of cash flows. A company
                     can be EBITDA-positive on a quarterly basis while being cash-flow-negative on a monthly basis purely
                     because of payout timing.</p>
 
-                <p>The metrics that actually matter for underwriting an AI company include <strong>Revenue per dollar of
-                        inference</strong>, <strong>Payout cycle duration</strong>, and <strong>Inference cost
-                        trajectory</strong>.</p>
+                <p>The metrics that actually matter for underwriting an AI company are different.</p>
+
+                <p><strong>Revenue per dollar of inference</strong> tells you whether the business generates more value
+                    than it consumes in its primary variable cost. This is the AI equivalent of a retailer's gross
+                    profit per unit. A ratio above 2.0x generally indicates healthy economics. Above 3.0x is strong.</p>
+
+                <p><strong>Payout cycle duration</strong> tells you how long capital is locked in the marketplace
+                    pipeline. Combined with monthly compute costs, this lets you calculate the exact working capital
+                    gap: how many dollars are in limbo at any given time.</p>
+
+                <p><strong>Inference cost trajectory</strong> tells you whether unit economics are improving or
+                    deteriorating. If the company is processing more queries per dollar of compute (through better
+                    caching, smaller models, or prompt optimisation), the working capital gap is shrinking relative to
+                    revenue even if absolute costs are rising.</p>
+
+                <p><strong>Customer concentration by compute intensity</strong> tells you whether one customer is
+                    disproportionately consuming resources relative to revenue. A customer who accounts for 20% of
+                    revenue but 40% of compute costs represents hidden risk that top-line numbers do not reveal.</p>
+
+                <p>None of these metrics appear on a standard bank loan application. Most accounting software does not
+                    calculate them. They require direct integration with inference billing APIs and marketplace payout
+                    systems to compute accurately.</p>
 
                 <h2>What founders can do today</h2>
                 <p>If you are an AI founder running into this cash flow timing problem, there are a few practical steps
-                    worth considering while the lending market catches up:</p>
-                <ul>
-                    <li><strong>Negotiate compute terms.</strong> Committed-use discounts often come with more
-                        favourable billing terms.</li>
-                    <li><strong>Structure marketplace contracts carefully.</strong> Push for annual upfront billing
-                        where possible.</li>
-                    <li><strong>Track your real working capital gap.</strong> Build a model that accounts for your exact
-                        payout timing.</li>
-                    <li><strong>Separate your unit economics from blended financials.</strong> Show your profitability
-                        at the inference level.</li>
-                </ul>
+                    worth considering while the lending market catches up.</p>
+
+                <p><strong>Negotiate compute terms.</strong> Most LLM providers offer committed-use discounts that also
+                    come with more favourable billing terms. If you can project your monthly inference volume with
+                    reasonable accuracy, a committed-use agreement might buy you 60-day payment terms instead of 30. The
+                    discount itself (often 20% to 40% off on-demand pricing) also reduces the absolute size of the
+                    working capital gap.</p>
+
+                <p><strong>Structure marketplace contracts carefully.</strong> Where possible, push for annual upfront
+                    billing rather than monthly usage-based billing. Buyers often prefer this for budget predictability,
+                    and marketplaces typically disburse upfront payments faster. This does not eliminate the payout
+                    delay, but it concentrates the delay into a single event rather than a recurring monthly drain.</p>
+
+                <p><strong>Track your real working capital gap.</strong> Build a simple model that takes your monthly
+                    inference costs, adds operating expenses, and subtracts the expected marketplace payout timing. This
+                    number is your rolling working capital requirement. Knowing it precisely puts you in a much stronger
+                    position when talking to any potential lender, and it often reveals that the gap is larger than
+                    founders intuitively expect.</p>
+
+                <p><strong>Separate your unit economics from your blended financials.</strong> When presenting to
+                    investors or lenders, show revenue per dollar of inference on a per-customer or per-product basis.
+                    This tells a fundamentally different story than a blended P&L, and it is the story that matters for
+                    creditworthiness.</p>
+
+                <p>The marketplace distribution model is not going away. For AI companies, it is often the most
+                    efficient path to enterprise revenue. But the working capital mechanics of that path are poorly
+                    understood, underserved by existing financial products, and becoming more acute as the AI startup
+                    population explodes. Founders who understand these dynamics early will be better prepared to grow
+                    through them.</p>
 
                 <div class="article-cta">
-                    <p>This article was written by the Floatcap team. We are building working capital infrastructure for
-                        AI companies selling through marketplaces and enterprise channels. <a href="/#waitlist">Join the
-                            waitlist.</a></p>
+                    <p><em>This article was written by the Floatcap team. We are building working capital infrastructure
+                            for AI companies selling through marketplaces and enterprise channels. <a
+                                href="/#waitlist">Join the waitlist.</a></em></p>
                 </div>
             </div>
         </article>
