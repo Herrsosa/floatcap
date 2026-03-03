@@ -1,0 +1,3 @@
+- We use Vanilla CSS. Do not use SASS, LESS, or PostCSS plugins.
+- Stick to the existing design system variables (e.g., dark background `#12141C`, gold accents `#C9A84C`).
+- Animations should be subtle and hardware-accelerated (use `transform` and `opacity`).

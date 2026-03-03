@@ -1,0 +1,3 @@
+- We use pure, semantic HTML5.
+- Do NOT use Tailwind CSS classes or any other utility framework. We rely strictly on custom CSS defined in `src/style.css`.
+- Ensure all new elements are fully responsive and use relative units where appropriate.

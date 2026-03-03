@@ -1,0 +1,3 @@
+- We use Vanilla JavaScript (ES Modules).
+- Do NOT introduce React, Vue, jQuery, or any other UI rendering libraries.
+- Rely on standard DOM manipulation (`document.querySelector`, `addEventListener`).
