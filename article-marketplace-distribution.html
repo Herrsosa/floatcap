@@ -130,11 +130,100 @@
                 <p>The irony is that the two marketplaces with the longest payout delays (Microsoft and AWS) are also
                     the two where enterprise AI companies concentrate most of their distribution.</p>
 
-                <figure class="article-image">
-                    <img src="/marketplace-comparison-chart.png"
-                        alt="Comparison chart of Microsoft, AWS, and Salesforce marketplace fee structures and payout cycles.">
-                    <figcaption>Marketplace payout dynamics comparison.</figcaption>
-                </figure>
+                <div class="custom-diagram comparison-diagram"
+                    style="background: #12141C; padding: 2rem; border-radius: 12px; font-family: 'Outfit', sans-serif; color: #E2E8F0; margin: 2.5rem 0;">
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+
+                        <!-- Microsoft Card -->
+                        <div
+                            style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 1.5rem;">
+                            <h3 style="margin-top: 0; color: #fff; font-size: 1.125rem; margin-bottom: 1.5rem;">
+                                Microsoft Marketplace</h3>
+                            <div style="margin-bottom: 1rem;">
+                                <div style="font-size: 0.875rem; color: #94A3B8; margin-bottom: 0.25rem;">Fee</div>
+                                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 1.25rem; color: #fff;">
+                                    3%</div>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <div style="font-size: 0.875rem; color: #94A3B8; margin-bottom: 0.25rem;">Payout</div>
+                                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 1.25rem; color: #fff;">
+                                    45-75 days</div>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <div style="font-size: 0.875rem; color: #94A3B8; margin-bottom: 0.25rem;">Model</div>
+                                <div style="font-size: 0.9375rem;">Agency (bills/collects)</div>
+                            </div>
+                            <div>
+                                <div style="font-size: 0.875rem; color: #94A3B8; margin-bottom: 0.25rem;">Key Detail
+                                </div>
+                                <div style="font-size: 0.875rem; line-height: 1.4;">30-day credit card escrow + EA
+                                    invoice terms</div>
+                            </div>
+                        </div>
+
+                        <!-- AWS Card -->
+                        <div
+                            style="background: rgba(255,255,255,0.03); border: 1px solid #C9A84C; border-radius: 8px; padding: 1.5rem; position: relative;">
+                            <h3 style="margin-top: 0; color: #fff; font-size: 1.125rem; margin-bottom: 1.5rem;">AWS
+                                Marketplace</h3>
+                            <div style="margin-bottom: 1rem;">
+                                <div style="font-size: 0.875rem; color: #94A3B8; margin-bottom: 0.25rem;">Fee</div>
+                                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 1.25rem; color: #fff;">
+                                    3-20% <span
+                                        style="font-size: 0.75rem; font-family: 'Outfit', sans-serif; color: #94A3B8;">(varies)</span>
+                                </div>
+                            </div>
+                            <div
+                                style="margin-bottom: 1rem; background: rgba(201, 168, 76, 0.1); padding: 0.5rem -0.5rem; border-radius: 4px;">
+                                <div
+                                    style="font-size: 0.875rem; color: #C9A84C; margin-bottom: 0.25rem; padding-left: 0.5rem;">
+                                    Payout</div>
+                                <div
+                                    style="font-family: 'IBM Plex Mono', monospace; font-size: 1.25rem; color: #C9A84C; font-weight: 600; padding-left: 0.5rem; padding-bottom: 0.25rem;">
+                                    38-100 days</div>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <div style="font-size: 0.875rem; color: #94A3B8; margin-bottom: 0.25rem;">Model</div>
+                                <div style="font-size: 0.9375rem;">Collection-dependent</div>
+                            </div>
+                            <div>
+                                <div style="font-size: 0.875rem; color: #94A3B8; margin-bottom: 0.25rem;">Key Detail
+                                </div>
+                                <div style="font-size: 0.875rem; line-height: 1.4;">Buyer Net 30/60 terms directly
+                                    extend payout</div>
+                            </div>
+                        </div>
+
+                        <!-- Salesforce Card -->
+                        <div
+                            style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 1.5rem;">
+                            <h3 style="margin-top: 0; color: #fff; font-size: 1.125rem; margin-bottom: 1.5rem;">
+                                Salesforce AppExchange</h3>
+                            <div style="margin-bottom: 1rem;">
+                                <div style="font-size: 0.875rem; color: #94A3B8; margin-bottom: 0.25rem;">Fee</div>
+                                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 1.25rem; color: #fff;">
+                                    15% + $0.30</div>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <div style="font-size: 0.875rem; color: #94A3B8; margin-bottom: 0.25rem;">Payout</div>
+                                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 1.25rem; color: #fff;">
+                                    7-14 days</div>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <div style="font-size: 0.875rem; color: #94A3B8; margin-bottom: 0.25rem;">Model</div>
+                                <div style="font-size: 0.9375rem;">Stripe-powered</div>
+                            </div>
+                            <div>
+                                <div style="font-size: 0.875rem; color: #94A3B8; margin-bottom: 0.25rem;">Key Detail
+                                </div>
+                                <div style="font-size: 0.875rem; line-height: 1.4;">Near-real-time (counter-example)
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
 
                 <h2>The compounding effect on AI companies</h2>
                 <p>For a traditional SaaS company, marketplace payout delays are an inconvenience. Your hosting costs
@@ -172,11 +261,102 @@
                 <p>This is not a profitability problem. Your unit economics are strong. It is a pure timing problem. And
                     it gets worse, not better, as you grow.</p>
 
-                <figure class="article-image">
-                    <img src="/cash-flow-waterfall-chart.png"
-                        alt="Cash flow waterfall chart illustrating the growing working capital gap as revenue and costs scale.">
-                    <figcaption>The widening working capital gap during growth phases.</figcaption>
-                </figure>
+                <div class="custom-diagram waterfall-diagram"
+                    style="background: #12141C; padding: 2.5rem 2rem 2rem; border-radius: 12px; font-family: 'Outfit', sans-serif; color: #E2E8F0; margin: 2.5rem 0; width: 100%;">
+                    <svg viewBox="0 0 800 350" style="width: 100%; height: auto; max-height: 350px; display: block;">
+                        <!-- Definitions -->
+                        <defs>
+                            <linearGradient id="costGradient" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="#C9A84C" stop-opacity="0.8" />
+                                <stop offset="100%" stop-color="#C9A84C" stop-opacity="0.0" />
+                            </linearGradient>
+                            <linearGradient id="payoutGradient" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="#4ADE80" stop-opacity="0.5" />
+                                <stop offset="100%" stop-color="#4ADE80" stop-opacity="0.0" />
+                            </linearGradient>
+                            <pattern id="gapHatch" width="8" height="8" patternUnits="userSpaceOnUse"
+                                patternTransform="rotate(45)">
+                                <rect width="4" height="8" fill="#F87171" fill-opacity="0.2" />
+                            </pattern>
+                        </defs>
+
+                        <!-- Grid Lines -->
+                        <g stroke="rgba(255,255,255,0.08)" stroke-width="1" stroke-dasharray="4,4">
+                            <line x1="60" y1="40" x2="760" y2="40" />
+                            <line x1="60" y1="110" x2="760" y2="110" />
+                            <line x1="60" y1="180" x2="760" y2="180" />
+                            <line x1="60" y1="250" x2="760" y2="250" />
+                        </g>
+
+                        <!-- Y-Axis Labels -->
+                        <g font-family="IBM Plex Mono, monospace" font-size="12" fill="#94A3B8">
+                            <text x="50" y="45" text-anchor="end">$600k</text>
+                            <text x="50" y="115" text-anchor="end">$400k</text>
+                            <text x="50" y="185" text-anchor="end">$200k</text>
+                            <text x="50" y="255" text-anchor="end">$0</text>
+                        </g>
+
+                        <!-- X-Axis line -->
+                        <line x1="60" y1="250" x2="760" y2="250" stroke="#475569" stroke-width="2" />
+
+                        <!-- Data Points -->
+                        <!-- Gap Shading (Path representing difference) -->
+                        <path d="M 100 232 L 220 208 L 340 173 L 460 134 L 580 92 L 700 47 
+                                 L 700 143 L 580 173 L 460 208 L 340 232 L 220 250 L 100 250 Z"
+                            fill="url(#gapHatch)" />
+
+                        <!-- Cost Area and Line -->
+                        <path d="M 100 250 L 100 232 L 220 208 L 340 173 L 460 134 L 580 92 L 700 47 L 700 250 Z"
+                            fill="url(#costGradient)" />
+                        <path d="M 100 232 L 220 208 L 340 173 L 460 134 L 580 92 L 700 47" fill="none" stroke="#C9A84C"
+                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+
+                        <!-- Payout Area and Line -->
+                        <path d="M 100 250 L 100 250 L 220 250 L 340 232 L 460 208 L 580 173 L 700 143 L 700 250 Z"
+                            fill="url(#payoutGradient)" />
+                        <path d="M 100 250 L 220 250 L 340 232 L 460 208 L 580 173 L 700 143" fill="none"
+                            stroke="#4ADE80" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+
+                        <!-- X Axis Labels -->
+                        <g font-family="Outfit, sans-serif" font-size="14" fill="#94A3B8" text-anchor="middle">
+                            <text x="100" y="275">Jan</text>
+                            <text x="220" y="275">Feb</text>
+                            <text x="340" y="275">Mar</text>
+                            <text x="460" y="275">Apr</text>
+                            <text x="580" y="275">May</text>
+                            <text x="700" y="275">Jun</text>
+                        </g>
+
+                        <!-- Legend / Gap Label -->
+                        <g font-family="Outfit, sans-serif" font-size="13">
+                            <rect x="340" y="160" width="140" height="26" rx="13" fill="#1E293B" stroke="#F87171"
+                                stroke-width="1" />
+                            <text x="410" y="178" fill="#F87171" text-anchor="middle" font-weight="600">Working Capital
+                                Gap</text>
+
+                            <!-- Callout for Month 6 -->
+                            <path d="M 698 100 L 610 100" fill="none" stroke="#F87171" stroke-width="1"
+                                stroke-dasharray="2,2" opacity="0.6" />
+                            <rect x="520" y="20" width="230" height="38" rx="6" fill="#1E293B"
+                                stroke="rgba(255,255,255,0.15)" stroke-width="1" />
+                            <text x="635" y="44" fill="#fff" text-anchor="middle">Month 6: <tspan
+                                    font-family="IBM Plex Mono, monospace" fill="#F87171">$275K gap</tspan> on <tspan
+                                    font-family="IBM Plex Mono, monospace" fill="#4ADE80">$500K</tspan> rev.</text>
+                            <circle cx="700" cy="95" r="4" fill="#F87171" />
+                        </g>
+                    </svg>
+                    <div
+                        style="display: flex; justify-content: center; gap: 2rem; margin-top: 1rem; font-size: 0.875rem;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <div style="width: 14px; height: 14px; background: #C9A84C; border-radius: 3px;"></div>
+                            <span>Cumulative Costs</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <div style="width: 14px; height: 14px; background: #4ADE80; border-radius: 3px;"></div>
+                            <span>Marketplace Payouts</span>
+                        </div>
+                    </div>
+                </div>
 
                 <h2>The metrics that matter (and the ones that don't)</h2>
                 <p>Traditional lenders evaluate businesses on gross margin, EBITDA, and debt-to-equity ratios. For AI
