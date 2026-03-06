@@ -56,10 +56,12 @@ export function initWaitlist() {
             submitBtn.disabled = true;
 
             try {
+                const formData = new FormData();
+                formData.append('email', email);
                 const res = await fetch(FORMSPREE_ENDPOINT, {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-                    body: JSON.stringify({ email }),
+                    headers: { Accept: 'application/json' },
+                    body: formData,
                 });
 
                 if (res.ok) {
