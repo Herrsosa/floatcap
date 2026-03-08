@@ -9,6 +9,7 @@ import { initScrollReveal } from './scroll-reveal.js';
 import { initNav } from './nav.js';
 import { initWaitlist } from './waitlist.js';
 import { initBackToTop } from './back-to-top.js';
+import { initPayoutDelayCalculator } from './payout-delay-calculator.js';
 
 // Initialize Vercel Analytics
 inject();
@@ -19,6 +20,7 @@ document.documentElement.classList.remove('no-js');
 // Initialize all modules
 initMeshBackground();
 initTerminal();
+initPayoutDelayCalculator();
 initScrollReveal();
 initNav();
 initWaitlist();
