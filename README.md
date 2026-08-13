@@ -2,6 +2,21 @@
 
 Working capital designed for inference economics. Non-dilutive credit lines for AI companies.
 
+## About
+
+Floatcap is an exploration of working-capital infrastructure for AI companies.
+
+The thesis is that inference increasingly behaves like a variable cost of goods sold. Companies consuming significant compute may therefore need financing structures tied to usage, receivables and contracted revenues rather than conventional venture financing.
+
+This repository contains the working product prototype, including the credit-assessment interface and application flow.
+
+## Built with
+
+- Vite / JavaScript
+- Interactive credit-assessment frontend
+- Formspree integration
+- Vercel deployment
+
 ## Getting Started
 
 ```bash
